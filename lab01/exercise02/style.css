@@ -1,24 +1,57 @@
 body * {
     box-sizing: border-box;
+    display: inline-block
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*
-Add some style blocks below this line to style the cards.
-Feel free to borrow from Exercise 1.
-*/
+/* Desktop */
+section{
+    box-sizing: border-box;
+    border: dotted 1px #CCC; 
+    width: 20vw;
+    height: auto;   
+    /* padding: 10px; */
+    /*
+    Alternative syntax:
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    */
+    margin: 10px;
+    /*
+    Alternative syntax:
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    */
+}
+
+section img{
+    width: 100%;
+
+}
+
+section h2, section p, section button{
+    margin: 25px
+}
 
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
-
+    section{
+        width: 40vw;
+    }
 }
+
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
-
-    
+    section{
+        width: 80vw;
+    }
 }
