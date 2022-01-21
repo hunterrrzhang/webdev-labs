@@ -35,14 +35,11 @@ select user_id, count(*) from comments group by user_id ORDER BY count(*) desc;
 
 
 -- Exercise 8
-select posts.id, posts.image_url, posts.user_id, users.username, users.first_name, users.last_name 
-from posts inner join users on posts.user_id= users.id where users.id=26 or users.id = 12;
-
+select posts.id, posts.image_url, posts.user_id, users.username, users.first_name, users.last_name from posts inner join users on posts.user_id= users.id where users.id=26 or users.id = 12;
 
 
 -- Exercise 9
-select following.id, posts.pub_date, following.following_id from posts inner join following on posts.user_id= following.user_id where posts.user_id=26;
-
+SELECT posts.id, posts.pub_date, following.following_id FROM posts INNER JOIN following ON posts.user_id = following.following_id WHERE following.user_id = 26;
 
 
 -- Exercise 10
